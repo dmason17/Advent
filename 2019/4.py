@@ -38,14 +38,11 @@ def nextNum(num):
     return num
 
 low = [2, 3, 5, 7, 7 ,6]
-# low = [2, 9, 9, 9, 9 ,9]
 high = [7, 0, 6, 9, 4, 8]
 
 count = 0
 while int(''.join(map(str,low))) < int(''.join(map(str,high))):
     if onlyTwoCheck(nextNum(low)):
         count += 1
-# print nextNum(low)
-# print 'RUN 2'
-# print nextNum(low)
+
 print count - 1
